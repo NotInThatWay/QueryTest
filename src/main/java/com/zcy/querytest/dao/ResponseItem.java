@@ -1,0 +1,17 @@
+package com.zcy.querytest.dao;
+
+import com.alibaba.fastjson.JSONObject;
+import lombok.Data;
+import org.springframework.stereotype.Component;
+
+import java.util.List;
+
+@Component
+@Data
+public class ResponseItem {
+    String code;
+    String request_date_time;
+    String date_time;
+    JSONObject express;
+    List<TradeItem> trade_items;
+}
