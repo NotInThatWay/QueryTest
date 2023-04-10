@@ -8,5 +8,5 @@ import java.util.concurrent.Executors;
 @Service
 public class ThreadPoolService {
     public static ExecutorService cachedExecutor = Executors.newCachedThreadPool();
-    public static ExecutorService fixedExecutor = Executors.newFixedThreadPool(30);
+    public static ExecutorService fixedExecutor = Executors.newFixedThreadPool(200);
 }
